@@ -1,4 +1,3 @@
-hello
 package Project_FSD;
 
 import java.io.IOException;
