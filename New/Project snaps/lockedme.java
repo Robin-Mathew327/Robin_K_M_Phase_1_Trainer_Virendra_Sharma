@@ -9,7 +9,7 @@ import java.io.FilenameFilter;
 import java.util.Arrays;
 import java.util.InputMismatchException;
 
-public class AccountPassw {
+public class LockedMe {
 		
 	public static void main(String args[]) throws IOException
 	{
@@ -20,13 +20,12 @@ public class AccountPassw {
 	System.out.println("****************************************************************");
 	System.out.println("Developer: Robin K M ");
 	System.out.println();
-	char c = 0;
 	do {
 	process();
 	
 	}
 		
-	while(c == 'y' || c == 'Y');
+	while(true);
 	}
 	
 //FileNotFound Exception 	
@@ -83,7 +82,7 @@ catch(ArithmeticException e) {
 		Scanner input = new Scanner(System.in);
 		File file = new File("C:\\Users\\Rmath\\Desktop\\New folder");
 
-		AccountPassw obj = new AccountPassw();
+		LockedMe obj = new LockedMe();
 		System.out.println(" 1. View files");
 		System.out.println(" 2. File mainpulation options");
 		System.out.println(" 3. Exit");
@@ -193,13 +192,11 @@ catch(ArithmeticException e) {
 								System.out.println(loc[i].getName());
 												}
 							else if(loc[i].isDirectory()) {
-								if(loc[i].getName().contains(h)) {
 								System.out.println("The keyword has retured the below directories");
-								System.out.println(loc[i].getName());
-																}
-														}											
+								System.out.println(loc[i].getName());}
+																			
 													}
-				}
+											}
 				if(flag==false)
 				{
 						System.out.println("No file or directory found with the keyword : "+ h);
